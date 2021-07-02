@@ -1,11 +1,4 @@
-/* Codded by @TOXIC-DEVIL
-Telegram: t.me/toxicdevil
-Instagram: www.instagram.com/toxic_devil_abhinav
-Special Thanks:
-@Phaticusthiccy for Unlimitted Helps
-*/
-
-const Asena = require('../events');
+const TOXIC_DEVIL = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
@@ -13,7 +6,7 @@ const Config = require('../config');
 // Description
 const AN = "It Sends Random Anime"
 
-    Asena.addCommand({pattern: 'randanime', fromMe: true, desc: AN}, (async (message, match) => {
+    TOXIC_DEVIL.addCommand({pattern: 'randanime', fromMe: true, desc: AN}, (async (message, match) => {
 
     var r_text = new Array ();
 
