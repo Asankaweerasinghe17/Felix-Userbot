@@ -6,18 +6,18 @@ you may not use this file except in compliance with the License.
 WhatsAsena - Yusuf Usta
 */
 
-const Asena = require('../events');
+const TOXIC_DEVIL = require('../events');
 const Config = require('../config');
 const {MessageType} = require('@adiwajshing/baileys');
 
 const Language = require('../language');
 const Lang = Language.getString('_asena');
 
-    Asena.addCommand({pattern: 'list ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    TOXIC_DEVIL.addCommand({pattern: 'list ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
         var CMD_HELP = '';
         if (match[1] === '') {
-            Asena.commands.map(
+            TOXIC_DEVIL.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -47,7 +47,7 @@ const Lang = Language.getString('_asena');
         } else {
 
             var CMD_HELP = '';
-            Asena.commands.map(
+            TOXIC_DEVIL.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -79,11 +79,11 @@ const Lang = Language.getString('_asena');
         }
     }));
 
-    Asena.addCommand({pattern: 'felix ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    TOXIC_DEVIL.addCommand({pattern: 'felix ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
 
         var CMD_HELP = '';
         if (match[1] === '') {
-            Asena.commands.map(
+            TOXIC_DEVIL.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -113,7 +113,7 @@ const Lang = Language.getString('_asena');
         } else {
 
             var CMD_HELP = '';
-            Asena.commands.map(
+            TOXIC_DEVIL.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
