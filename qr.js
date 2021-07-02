@@ -1,11 +1,3 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-
-WhatsAsena - Yusuf Usta
-*/
-
 const chalk = require('chalk');
 const {WAConnection} = require('@adiwajshing/baileys');
 const {StringSession} = require('./felix/');
@@ -36,7 +28,7 @@ ${chalk.blue.italic('⏱️ Connecting to Felix-Userbot... Please Wait...')}`);
         }
 
         console.log(
-            chalk.blue.bold('Locale kuruyorsanız node bot.js ile botu başlatabilirsiniz.')
+            chalk.green.bold('Here is Your Felix Session..👆.')
         );
         process.exit(0);
     });
