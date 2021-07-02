@@ -1,11 +1,3 @@
-/* Codded by @phaticusthiccy
-Telegram: t.me/phaticusthiccy
-Instagram: www.instagram.com/kyrie.baran
-*/
-
-// It converts wrong commands to true
-// Also Kind of AI 
-
 const Asena = require('../events');
 const {MessageType, GroupSettingChange} = require('@adiwajshing/baileys');
 
