@@ -1,16 +1,11 @@
-/* Codded by @phaticusthiccy
-Telegram: t.me/phaticusthiccy
-Instagram: www.instagram.com/kyrie.baran
-*/
-
-const Asena = require('../events');
+const TOXIC_DEVIL = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const Config = require('../config');
 
 const Language = require('../language');
 const Lang = Language.getString('tagall');
 
-    Asena.addCommand({pattern: 'report ?(.*)', fromMe: true, desc: Lang.REPORT}, (async (message, match) => {
+    TOXIC_DEVIL.addCommand({pattern: 'report ?(.*)', fromMe: true, desc: Lang.REPORT}, (async (message, match) => {
         if (match[1] == '' && message.reply_message) {
             let grup = await message.client.groupMetadata(message.jid);
             var jids = [];
