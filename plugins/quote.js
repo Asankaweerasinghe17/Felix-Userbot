@@ -1,16 +1,16 @@
-const Asena = require('../events');
+const TOXIC_DEVIL = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const got = require('got');
 
 // List
 const QUOTE_DESC = "It Sends Random Quote"
-const NEED_LOCATIONA = "*Invalid Request*"
+const NEED_LOCATIONA = "*My Owner is TOXIC-DEVIL 😘*"
 const QUOTE = "Quote :"
 const AUTHOR = "Author :"
 const NOT_FOUNDA = "```Sorry,I could not find a quote. 😖```"
 
-Asena.addCommand({pattern: 'quote ?(.*)', fromMe: true, desc: QUOTE_DESC}, async (message, match) => {
-	if (match[1] === 'xx') return await message.reply(NEED_LOCATIONA);
+TOXIC_DEVIL.addCommand({pattern: 'quote ?(.*)', fromMe: true, desc: QUOTE_DESC}, async (message, match) => {
+	if (match[1] === 'Who is your owner') return await message.reply(NEED_LOCATIONA);
 	const url = `https://api.quotable.io/random`;
 	try {
 		const response = await got(url);
