@@ -1,11 +1,4 @@
-/* Copyright (C) 2020 TOXIC DEVIL
-CODDED BY TOXIC DEVIL
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-WhatsAsenaPublic - TOXIC DEVIL
-*/
-
-const Asena = require('../events');
+const TOXIC_DEVIL = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
@@ -16,7 +9,7 @@ const got = require("got");
 const QR_DESC = "It Converts Text To Qr Code"
 const NEED_TEXT = "*Must Enter Some Words*"
 
-Asena.addCommand({pattern: 'qr ?(.*)', fromMe: true, desc: QR_DESC}, (async (message, match) => {
+TOXIC_DEVIL.addCommand({pattern: 'qr ?(.*)', fromMe: true, desc: QR_DESC}, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(NEED_TEXT);
 
