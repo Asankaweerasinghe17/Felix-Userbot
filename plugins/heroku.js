@@ -16,7 +16,7 @@ const heroku = new Heroku({
 
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
-/* Asena.addCommand({pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_DESC}, (async (message, match) => {
+/* TOXIC_DEVIL.addCommand({pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_DESC}, (async (message, match) => {
 
     if (match[1] == '' && message.reply_message) {
         return await message.client.sendMessage(message.jid, Lang.DEGİS_NONE, MessageType.text); 
