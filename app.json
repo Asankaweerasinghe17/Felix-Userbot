@@ -17,7 +17,7 @@
             "required": false
         },
         "LANGUAGE": {
-            "description": "Bot language. English => en Malayalam => ml.",
+            "description": "Bot language. English => en.",
             "required": true,
             "value": "EN"
         },
