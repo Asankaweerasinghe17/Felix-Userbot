@@ -1,4 +1,4 @@
-/* const Asena = require('../events');
+const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const exec = require('child_process').exec;
 const os = require("os");
@@ -42,4 +42,4 @@ Asena.addCommand({on: 'text', fromMe: false, deleteCommand: false}, (async (mess
             await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
         }
     }
-})); */
+})); 
