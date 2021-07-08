@@ -18,7 +18,8 @@
         },
         "ANTI_LINK": {
             "description": "Makes the bot anti link - If you need to kick the members who post links on group, then type 'true' else type 'false'.",
-            "required": false,
+            "required": true,
+            "value": "false"
         },
         "LANGUAGE": {
             "description": "Bot language. English => en.",
