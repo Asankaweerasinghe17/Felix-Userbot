@@ -40,8 +40,9 @@
             "required": true
         },
         "REMOVE_BG_API_KEY": {
-            "description": "Copy This Link & Paste This In The Below Blank. https://remove.bg",
-            "required": false
+            "description": "Api Key For Remove BG, If You don't need remove bg command, then type 'false'",
+            "required": true,
+            "value": "https://remove.bg"
         }
     },
     "addons": [{
