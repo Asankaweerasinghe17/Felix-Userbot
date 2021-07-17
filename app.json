@@ -24,7 +24,7 @@
         "LANGUAGE": {
             "description": "Bot language. English => en.",
             "required": true,
-            "value": "EN"
+            "value": "ES"
         },
         "HANDLERS": {
             "description": "For commands.",
