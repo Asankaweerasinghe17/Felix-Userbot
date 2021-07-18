@@ -22,7 +22,7 @@
             "value": "false"
         },
         "LANGUAGE": {
-            "description": "Bot language. English => en.",
+            "description": "Bot language. Enpañol => es.",
             "required": true,
             "value": "ES"
         },
