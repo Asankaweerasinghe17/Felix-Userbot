@@ -43,7 +43,7 @@
     "got": "^11.8.0",
     "heroku-client": "^3.1.0",
     "jimp": "^0.16.1",
-    "js-ffmpeg": "0.0.26",
+    "js-ffmpeg": "0.0.29",
     "jsdom": "^16.4.0",
     "langs": "^2.0.0",
     "meme-maker": "^2.1.2",
